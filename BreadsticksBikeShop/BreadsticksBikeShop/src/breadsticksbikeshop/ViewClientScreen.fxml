@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" onDragDetected="#backButtonPressed" prefHeight="465.0" prefWidth="698.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="breadsticksbikeshop.ViewClientScreenController">
+   <children>
+      <TableView fx:id="clientTableView" layoutX="6.0" layoutY="65.0" prefHeight="324.0" prefWidth="494.0">
+        <columns>
+          <TableColumn fx:id="clientIDColumn" prefWidth="67.0" text="Client ID" />
+          <TableColumn fx:id="clientFirstNameColumn" prefWidth="83.0" text="First Name" />
+            <TableColumn fx:id="clientLastNameColumn" prefWidth="81.0" text="Last Name" />
+            <TableColumn fx:id="clientAddressColumn" prefWidth="146.0" text="Address" />
+            <TableColumn fx:id="clientPhoneNumberColumn" prefWidth="91.0" text="Phone" />
+        </columns>
+      </TableView>
+      <Label layoutX="89.0" layoutY="14.0" prefHeight="40.0" prefWidth="147.0" text="Client Data">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Button layoutX="556.0" layoutY="109.0" mnemonicParsing="false" onAction="#addClient" text="Add Client" />
+      <Button layoutX="579.0" layoutY="332.0" mnemonicParsing="false" onAction="#backButtonPressed" text="Back" />
+      <Button layoutX="544.0" layoutY="180.0" mnemonicParsing="false" onAction="#updateButtonPressed" text="Update Client" />
+      <Button layoutX="540.0" layoutY="256.0" mnemonicParsing="false" onAction="#removeClient" text="Remove Client" />
+      <TextField fx:id="removeTextField" layoutX="526.0" layoutY="45.0" prefHeight="39.0" prefWidth="158.0" promptText="Client ID to Remove" />
+   </children>
+</AnchorPane>

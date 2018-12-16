@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="329.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="breadsticksbikeshop.UpdatePartScreenController">
+   <children>
+      <TextField fx:id="partNameTextField" layoutX="53.0" layoutY="149.0" promptText="Part Name" />
+      <TextField fx:id="partPriceTextField" layoutX="50.0" layoutY="200.0" promptText="Part Price" />
+      <TextField fx:id="partDescriptionTextField" layoutX="50.0" layoutY="251.0" promptText="Part Description" />
+      <Button layoutX="193.0" layoutY="313.0" mnemonicParsing="false" onAction="#submitButton" text="Submit" />
+      <Button layoutX="50.0" layoutY="313.0" mnemonicParsing="false" onAction="#backButtonPressed" text="Back" />
+      <Label layoutX="116.0" layoutY="45.0" text="Update Part" />
+      <TextField fx:id="partIDTextField" layoutX="51.0" layoutY="95.0" promptText="Part ID to Update" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="breadsticksbikeshop.ViewInvoiceScreenController">
+   <children>
+      <TableView fx:id="invoiceTableView" layoutX="14.0" layoutY="14.0" prefHeight="368.0" prefWidth="451.0">
+         <columns>
+            <TableColumn fx:id="invoiceIDColumn" prefWidth="76.0" text="Invoice ID" />
+            <TableColumn fx:id="clientIDColumn" prefWidth="74.0" text="Client ID" />
+            <TableColumn fx:id="dateInColumn" prefWidth="78.0" text="Date In" />
+            <TableColumn fx:id="dateOutColumn" prefWidth="201.0" text="Date Out" />
+         </columns>
+      </TableView>
+      <Button fx:id="addInvoiceButton" layoutX="500.0" layoutY="97.0" mnemonicParsing="false" onAction="#addInvoice" text="Add" />
+      <Button fx:id="updateInvoiceButton" layoutX="486.0" layoutY="145.0" mnemonicParsing="false" onAction="#updateAction" text="Update" />
+      <Button fx:id="removeInvoiceButton" layoutX="489.0" layoutY="188.0" mnemonicParsing="false" onAction="#removeAction" text="Remove" />
+      <Button fx:id="backButton" layoutX="499.0" layoutY="237.0" mnemonicParsing="false" onAction="#backAction" text="Back" />
+      <TextField fx:id="searchInvoiceTextField" layoutX="471.0" layoutY="14.0" prefHeight="39.0" prefWidth="114.0" />
+   </children>
+</AnchorPane>

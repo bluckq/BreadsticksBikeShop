@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="breadsticksbikeshop.ViewPartScreenController">
+   <children>
+      <TableView fx:id="partTableView" layoutX="14.0" layoutY="14.0" prefHeight="368.0" prefWidth="451.0">
+        <columns>
+          <TableColumn fx:id="partIDColumn" prefWidth="48.0" text="ID" />
+          <TableColumn fx:id="partNameColumn" prefWidth="102.0" text="Name" />
+            <TableColumn fx:id="partPriceColumn" prefWidth="78.0" text="Price" />
+            <TableColumn fx:id="partDescriptionColumn" prefWidth="201.0" text="Description" />
+        </columns>
+      </TableView>
+      <Button fx:id="addPartButton" layoutX="500.0" layoutY="134.0" mnemonicParsing="false" onAction="#addPart" text="Add" />
+      <Button fx:id="updatePartButton" layoutX="487.0" layoutY="193.0" mnemonicParsing="false" onAction="#updateButtonPressed" text="Update" />
+      <Button fx:id="removePartButton" layoutX="484.0" layoutY="248.0" mnemonicParsing="false" onAction="#removePart" text="Remove" />
+      <Button fx:id="backButton" layoutX="498.0" layoutY="324.0" mnemonicParsing="false" onAction="#backButtonPressed" text="Back" />
+      <Button fx:id="searchPartButton" layoutX="490.0" layoutY="74.0" mnemonicParsing="false" onAction="#searchPart" text="Search" />
+      <TextField fx:id="searchPartTextField" layoutX="471.0" layoutY="14.0" prefHeight="39.0" prefWidth="114.0" />
+   </children>
+</AnchorPane>

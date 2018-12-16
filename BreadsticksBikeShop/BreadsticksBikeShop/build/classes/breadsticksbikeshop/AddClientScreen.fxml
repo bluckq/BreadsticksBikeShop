@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="276.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="breadsticksbikeshop.AddClientScreenController">
+   <children>
+      <TextField fx:id="firstNameTextField" layoutX="14.0" layoutY="34.0" promptText="First Name" />
+      <TextField fx:id="lastNameTextField" layoutX="14.0" layoutY="93.0" promptText="Last Name" />
+      <TextField fx:id="addressTextField" layoutX="14.0" layoutY="151.0" promptText="Address" />
+      <TextField fx:id="phoneNumberTextField" layoutX="14.0" layoutY="218.0" promptText="Phone" />
+      <Button layoutX="14.0" layoutY="312.0" mnemonicParsing="false" onAction="#backButtonAction" text="Back" />
+      <Button layoutX="160.0" layoutY="312.0" mnemonicParsing="false" onAction="#submitButtonPressed" text="Submit" />
+   </children>
+</AnchorPane>
